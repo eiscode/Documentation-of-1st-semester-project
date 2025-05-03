@@ -1,0 +1,112 @@
+.body {
+    background-color: #d8d8ed;
+}
+
+.marquee {
+    font-family:'Courier New', Courier, monospace;
+}
+
+.nav-pills .nav-link {
+    background-color: #bdbde4;
+    color: #2476b5;
+    margin: 0 5px;
+    border-radius: 20px;
+    transition: all 0.3s ease-in-out;
+    font-weight: 500;
+    padding: 10px 20px;
+    box-shadow: 0 20px 5px rgba(0,0,0.1);
+    font-family: 'poppins', sans-serif;
+}
+
+.nav-pills .nav-link:hover {
+    background-color: #8b8bd5;
+    color: white;
+}
+
+.nav-pills .nav-link.active {
+    background-color: #518bb8;
+    color: white;
+    font-weight: bold;
+}
+
+.custom-switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 28px;
+}
+
+.custom-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    background-color: #518bb8;
+    border-radius: 34px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    transition: 0.4s;
+}
+
+.slider::before {
+    position: absolute;
+    content: "";
+    height: 22px;
+    width: 22px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.input:checked + .slider {
+    background-color: #518bb8;
+}
+
+input:checked + .slider::before {
+    transform: translateX(22px);
+}
+
+.lampu-container {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 50px;
+}
+
+.lampu-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lamp-img {
+    width: 120px;
+    margin-top: 10px;
+}
+
+.toggle-all-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 1000;
+    background-color: #bdbde4;
+    color: #518bb8;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0.2);
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.toggle-all-btn :hover {
+    background-color: #bdbde4;
+}
