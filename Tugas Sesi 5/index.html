@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200..900&display=swap">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Pendaftaran Peserta Lomba 17 Agustus</title>
+    <style>
+        #body {
+            background-image: url('Asset/Images/Independence\ day\ 1.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        #marquee {
+            color: white;
+            font-family:'Courier New', Courier, monospace;
+        }
+
+        #container {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin: 0;
+        }
+
+        #h1 {
+            color:aliceblue;
+            display: 5;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-align: center;
+            font-size: 3rem;
+            font-family:'Times New Roman', Times, serif;
+            overflow: hidden;
+            border-right: 2px solid black;
+            white-space: nowrap;
+            margin: 0 auto;
+            letter-spacing: 2px;
+            animation: typing 3s steps(15, end), forwards, blink 0.6s step-end infinite;
+        }
+
+        @keyframes typing {
+            from {width: 0}
+            to {width: 15ch}
+        }
+
+        @keyframes blink {
+            50% {border-color: transparent;}
+        }
+
+        #bubble-btn {
+            background-color: #ab2525;
+            color: white;
+            border: none;
+            border-radius: 50px;
+            padding: 12px 28px;
+            font-size: 20px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+            box-shadow: 0 8px 15px rgba(0,0,0,0,0.1);
+            font-family:'sans serif';
+        }
+
+        #bubble-btn:hover {
+            background-color: #d04f4f;
+            transform: scale(1.05);
+        }
+
+        #btn-custom {
+            background-color: #ffb6b9;
+            border: none;
+            color: #fff;
+            font-weight: bold;
+            padding: 10px 25px;
+            border-radius: 30px;
+            transition: all 0.3s ease;
+        }
+
+        #btn-custom:hover {
+            background-color: #f998a5;
+            transform: scale(1.05);
+        }
+
+        #custom-modal {
+            border-radius: 15px;
+            background-color: #c43968;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            padding: 20px;
+            animation: slideUp 0.4s ease;
+            flex-direction: column;
+            background: linear-gradient(135deg, #ffe6f0, #ffffff);
+        }
+
+        #modal-title {
+            font-weight: bold;
+            color: #cd4141;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        #loginButton {
+            background-color: #f67280;
+            color: #fff;
+            font-weight: bold;
+            border: none;
+            border-radius: 20px;
+            transition: all 0.3 ease;
+        }
+
+        #loginButton:hover {
+            background-color: #c94f60;
+        }
+
+        @keyframes slideUp {
+            from {
+                transform: translateY(30px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body id="body">
+    <!-- MARQUEE -->
+    <marquee id="marquee">Kode Peserta: Peserta001 Password: peserta123 &nbsp; Kode Panitia: Panitia001, Password: panitia123 &nbsp; Kode Juri: Juri001, Password: juri123 </marquee>
+    <!-- MARQUEE -->
+    <!-- ENTRY BUTTON START -->
+    <div class="container" style="height: 100vh; display:flex; flex-direction: column; align-items: center; justify-content: center;">
+        <h1 id="h1">SELAMAT DATANG</h1>
+        <button id="bubble-btn" id="btn-custom" data-bs-toggle="modal" data-bs-target="#myModal">MASUK</button>
+    </div>
+    <!-- ENTRY BUTTON END -->
+
+    <!-- MODAL START -->
+    <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" id="custum-modal">
+                <div class="modal-header border-0">
+                    <h5 id="modal-title" id="myModalLabel">Pendaftaran Lomba 17 Agustus</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+                </div>
+                <div class="modal-body" id="root">
+                    <p>Silahkan isi data diri kamu dibawah untuk ikut lomba seru di hari kemerdekaan!</p>
+                <!-- FORM -->
+                    <div class="form-floating mb-3">
+                        <input type="name" class="form-control" id="namaLengkap" placeholder="Nama Lengkap">
+                        <label for="namaLengkap">Nama Lengkap</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="name" class="form-control" id="kode" placeholder="Kode">
+                        <label for="kode">Kode</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="name" class="form-control" id="namaTetangga" placeholder="Nama Tetangga">
+                        <label for="namaTetangga">Nama Tetangga</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="number" class="form-control" id="usia" placeholder="Usia">
+                        <label for="usia">Usia</label>
+                    </div>
+                    <div class="form-floating">
+                        <input type="password" class="form-control" id="password" placeholder="Password">
+                        <label for="password">Password</label>
+                    </div>
+                </div>
+
+                <!-- KATEGORI-->
+                    <p id="p1">Pilih kategori usia mu!（￣︶￣）↗</p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault1">
+                        <label class="form-check-label" for="radioDefault1">
+                          Anak-anak
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault2">
+                        <label class="form-check-label" for="radioDefault2">
+                          Remaja
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault3">
+                        <label class="form-check-label" for="radioDefault1">
+                          Dewasa
+                        </label>
+                    </div>
+                <!-- KATEGORI END -->
+
+                <!-- CHECKS -->
+                <p>Pilih lomba yang akan kamu ikuti!✍️(◔◡◔)</p>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="balap bakiak" id="check1">
+                    <label class="form-check-label" for="check1">
+                      Balap Bakiak Beregu
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="kelereng" id="check8">
+                    <label class="form-check-label" for="check8">
+                      Lari Kelereng
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="kerupuk" id="check9">
+                    <label class="form-check-label" for="check9">
+                      Makan Kerupuk
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="panjat pinang" id="check11">
+                    <label class="form-check-label" for="check11">
+                      Panjat Pinang
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="tarik tambang" id="check12">
+                    <label class="form-check-label" for="check12">
+                      Tarik Tambang
+                    </label>
+                </div>
+                <!-- CHECKS END -->
+                <div class="mb-3">
+                    <p id="hasilRole" style="color: black;"></p>
+                    <button type="submit" class="w-100" id="loginButton" onclick="onLogin()">Masuk</button>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- MODAL END -->
+
+    <!-- SCRIPT -->
+    <script type="application/javascript">
+        const akun = [
+            { kode: "Peserta001", password: "peserta123", role: "peserta" },
+            { kode: "panitia001", password: "panitia123", role: "panitia" },
+            { kode: "Juri001", password: "juri123", role: "juri"}
+        ];
+
+        function onLogin() {
+            const kode = document.getElementById("kode").value;
+            const password = document.getElementById("password").value;
+            const hasilRole = document.getElementById("hasilRole");
+
+            const user = akun.find(u => u.kode === kode && u.password === password);
+
+            if (user) {
+                hasilRole.innerText = "";
+                hasilRole.style.color = "";
+                sessionStorage.setItem ("role", user.role);
+
+                setTimeout(() => {
+                    if (user.role === "peserta") {
+                        window.location.href = "Dashboard-Peserta.html";
+                    } else if (user.role === "panitia") {
+                        window.location.href = "Dashboard-Panitia.html";
+                    } else if (user.role === "juri") {
+                        window.location.href = "Dashboard-Juri.html";
+                    }
+                }, 1500);
+            } else {
+                alert("Kode atau Password Salah")
+            }
+        }
+    </script> 
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous">
+    </script>
+    <!-- SCRIPT -->
+</body>
+</html>

@@ -1,0 +1,23 @@
+.body {
+    margin: 0;
+    right: 20px;
+    top: 10px;
+    background-color: #f9f9f9;
+}
+
+.navbar {
+    position: relative;
+    height: 60px;
+    background-color: rgb(209, 15, 15);
+    display: flex;
+    justify-content: center;
+}
+
+.title {
+    font-weight: bold;
+    color: white;
+    font-size: 35px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
