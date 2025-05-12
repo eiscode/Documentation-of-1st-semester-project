@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/Style.css">
+    <title>SWITCH THEME</title>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a id="home" href="#">HOME</a>
+            <a onclick="mode()" id="theme">DARK THEME</a>
+            <a onclick="spring()" id="tine">SPRING THEME</a>
+            <a onclick="autumn()" id="autumn">AUTUMN THEME</a>
+            <a onclick="sunset()" id="sunset">SUNSET THEME</a>
+            <a onclick="cool()" id="cool">WINTER THEME</a>
+            <a onclick="nature()" id="nature">NATURE THEME</a>
+        </nav>
+        <h1>SESSION 6 TEST - THEME SWITCHER</h1>
+    </div>
+
+    <!-- initializing function javascript -->
+    <script>
+        let body = document.body;
+        let theme = document.getElementById("theme");
+        let tine = document.getElementById("tine");
+
+        function mode() {
+            if (body.classList.toggle("dark")) {
+                theme.textContent = "LIGHT THEME"
+            } else {
+                theme.textContent = "DARK THEME"
+            }
+        }
+
+        function spring() {
+            body.classList.toggle("spring")
+        }
+
+        function autumn() {
+            body.classList.toggle("autumn")
+        }
+
+        function sunset() {
+            body.classList.toggle("sunset")
+        }
+
+        function cool() {
+            body.classList.toggle("coll")
+        }
+
+        function nature() {
+            body.classList.toggle("nature")
+        }
+    </script>
+</body>
+</html>

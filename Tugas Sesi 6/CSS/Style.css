@@ -1,0 +1,133 @@
+*,
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: white;
+    color: black;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    height: 100vh;
+    width: 100%
+}
+
+.dark {
+    background-color: black;
+    color: white;
+}
+
+.light {
+    background-color: white;
+    color: black;
+}
+
+.spring {
+    background-color: #ffc1cc;
+    color: #b85567;
+}
+
+.spring nav {
+    background-color: #ffc1cc;
+    color: #b85567;
+}
+
+.spring nav:hover {
+    background-color: #a44153;
+    cursor: pointer;
+    transition: background-color .5s ease-in-out;
+}
+
+.autumn {
+    background-color: #fae3b4;
+    color:#bc925a;
+}
+
+.autumn nav {
+    background-color: #fae3b4;
+    color:#bc925a;
+}
+
+.autumn nav:hover {
+    background-color: #a57e4b;
+    cursor: pointer;
+    transition: background-color .5s ease-in-out;
+
+}
+
+.sunset {
+    background-color: #ffb88c;
+    color: #b96937;
+}
+
+.sunset nav {
+    background-color: #ffb88c;
+    color: #b96937;
+}
+
+.sunset nav:hover {
+    background-color: #a15627;
+    cursor: pointer;
+    transition: background-color .5s ease-in-out;
+}
+
+.coll {
+    background-color: #add8e6;
+    color: #447382;
+}
+
+.coll nav {
+    background-color: #add8e6;
+    color: #447382;
+}
+
+.coll nav:hover {
+    background-color: #376979;
+    cursor: pointer;
+    transition: background-color .5s ease-in-out;
+}
+
+.nature {
+    background-color: #055f05;
+    color: #59af59;
+}
+
+.nature nav {
+    background-color: #055f05;
+    color: #59af59;
+}
+
+.nature nav:hover {
+    background-color: #3a9c3a;
+    cursor: pointer;
+    transition: background-color .5s ease-in-out;
+}
+
+nav {
+    position: absolute;
+    bottom: 0;
+    background-color: black;
+    width: 100%;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    font-weight: 700;
+}
+
+nav a:hover {
+    background-color: rgb(72, 72, 159);
+    cursor: pointer;
+    transition: background-color .5s ease-in-out;
+}
